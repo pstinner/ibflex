@@ -25,6 +25,7 @@ __all__ = [
     "DeliveredReceived",
     "ENUMS",
     "EnumType",
+    "PutCall"
 ]
 
 import enum
@@ -103,6 +104,7 @@ class Code(str, enum.Enum):
     STCG = "ST"  # Short-term P/L
     STOCKYIELD = "SY"  # Positions that may be eligible for Stock Yield.
     TRANSFER = "T"  # Transfer
+    AUTOFXCONV = "AFx" # AutoFX conversion resulting from trading
 
 
 @enum.unique
@@ -203,6 +205,7 @@ class Reorg(str, enum.Enum):
     MERGER = "TC"
     TENDERISSUE = "TI"
     TENDER = "TO"
+    TBILLMATURITY = "TM"
 
 
 @enum.unique
